@@ -141,7 +141,7 @@ var options = {
     const username = 'FEPSFY6963162';
     const repo = 'FY6963162';
 
-    const url = 'https://api.github.com/repos/${username}/${repo}/commits';
+    const url = `https://api.github.com/repos/${username}/${repo}/commits`;
 
     try {
       const response = await fetch(url, {
