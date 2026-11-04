@@ -158,13 +158,13 @@ var options = {
         const lastCommitDate = new Date(commits[0].commit.committer.date);
 
           // Displaying the time on load
-         document.getElementById('last-updated').innerText = 'Last Modified Time: ${lastCommitDate.toLocaleString()}';
+         document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
       } else {
         document.getElementById('last-updated').innerText = 'No commits found in the repository.';
       }
     } catch (error) {
       console.error('Error fetching the last updated time:', error);
-      document.getElementById('last-updated').innerText = 'Error fetching update time.Please check the repository details.';
+      document.getElementById('last-updated').innerText = `Error fetching update time.Please check the repository details.`;
     }
   }
   // Function to verify the last update time by re-fetching it from the API
